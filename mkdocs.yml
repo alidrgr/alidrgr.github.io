@@ -1,0 +1,83 @@
+site_name: Ali Derogar
+site_url: https://aliderogar.com
+
+plugins:
+  - search
+  - blog:
+      blog_dir: Blog
+      blog_toc: true
+      pagination: true
+      pagination_per_page: 5
+      post_url_date_format: yyyy
+  - social: 
+      enabled: true
+      cards: true
+      cards_dir: assets/images/social
+
+markdown_extensions:
+  - footnotes
+
+theme:
+  name: material
+  font:
+    text: Lexend
+    code: Roboto Mono
+  favicon: assets/images/favicon/favicon.ico
+  icon:
+    logo: fontawesome/solid/a
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    search: fontawesome/solid/magnifying-glass
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - About me: about-me.md
+  - Logs: logs.md
+  - Unconvex Drafts:
+    - Blog/index.md
+  
+extra:
+  social:
+
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/alidrgr
+
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/alidrgr.bsky.social
+
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/alidrgr
+    
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/derogar
+
