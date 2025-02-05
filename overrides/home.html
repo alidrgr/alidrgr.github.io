@@ -1,0 +1,119 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+{{ super() }}
+<style>
+  .md-header {
+    position: initial;
+  }
+  .md-main__inner {
+    margin: 0;
+    padding: 0;
+  }
+  .md-content {
+    display: none;
+  }
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 60em) {
+    .mdx-container {
+      padding: 1rem;
+    }
+    .mdx-hero__content {
+      padding-left: 1rem;
+    }
+  }
+  .md-main{    
+    height: 0vh;
+  }
+  .mdx-container {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content{
+    padding-right: 15%;
+    padding-left: 15%;
+    min-height:max-content;
+    margin: 0px;
+    overflow-y: inherit;
+    scroll-behavior: inherit;
+    font-family: 'Anta';
+  }
+
+  .avatarBox{
+    margin-top: 7vh;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .avatarPic{
+    display: inline-block;
+  }
+
+  #avatar {width: 45%; height: 45%;}
+
+  .headersBox{
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .nameheader{
+    display: block;
+  }
+
+  .subheader{
+    display: block;
+  }
+
+  .textBox{
+    padding-top: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+</style>
+
+  <section id="mdx-container" class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <div class="mdx-hero__content">
+          <div class = "avatarBox"> 
+            <div class = "avatarPic">
+                <img id="avatar" src="assets/images/avatar/avatar.png" alt="oh! that's me."> 
+            </div>
+          </div>
+          <div class="headersBox">
+            <div class="nameheader">
+              <h1><span>Ali Derogar Odolou</span></h1>
+            </div>
+            <div class="subheader">
+              <h3><span>Graduate Student of Computer Science</span></h3>
+            </div>
+          </div>
+          <div class = "textBox"> 
+            <div class = "text">
+              <p id="introduction"></p>
+            </div>
+          </div>
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+
+  </section>
+    
+{% endblock %}
+{% block content %}{% endblock %}
