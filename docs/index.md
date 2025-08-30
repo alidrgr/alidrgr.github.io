@@ -1,7 +1,5 @@
 ---
 hide:
-  - navigation
-title: Home
-template: home.html
+    - toc
 ---
-#
+### Notes by Ali Derogar Odolou

@@ -1,10 +1,10 @@
-site_name: Ali Derogar
-site_url: https://aliderogar.com
+site_name: Non-Convex.Space
+site_url: https://non-convex.space
 
 plugins:
   - search
   - blog:
-      blog_dir: Blog
+      blog_dir: .
       blog_toc: true
       pagination: true
       pagination_per_page: 5
@@ -22,9 +22,7 @@ theme:
   font:
     text: Lexend
     code: Roboto Mono
-  favicon: assets/images/favicon/favicon.ico
   icon:
-    logo: fontawesome/solid/a
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
     search: fontawesome/solid/magnifying-glass
@@ -60,11 +58,10 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Home: index.md
+  - Home:
+    - index.md
   - About me: about-me.md
-  - Logs: logs.md
-  - Unconvex Drafts:
-    - Blog/index.md
+
   
 extra:
   social:
